@@ -1,0 +1,42 @@
+{
+  "name": "map-kit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.8",
+    "@heroicons/react": "^2.1.5",
+    "@sanity/icons": "^3.4.0",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.57.3",
+    "autoprefixer": "^10.4.20",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "feed": "^4.2.2",
+    "framer-motion": "^11.5.4",
+    "next": "14.2.11",
+    "next-sanity": "^9.4.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-use-measure": "^2.1.1",
+    "sanity": "^3.57.3",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "@types/follow-redirects": "^1.14.4",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.11",
+    "postcss": "^8.4.47",
+    "sanity-codegen": "^0.9.8",
+    "tailwindcss": "^3.4.11",
+    "typescript": "^5"
+  }
+}
