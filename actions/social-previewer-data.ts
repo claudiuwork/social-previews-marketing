@@ -1,7 +1,7 @@
 "use server";
 
 import axios from "axios";
-import cheerio from "cheerio";
+import * as cheerio from "cheerio";
 
 export const socialPreviewerData = async (url: string | string[]) => {
   if (!url || !url.includes(".")) {
