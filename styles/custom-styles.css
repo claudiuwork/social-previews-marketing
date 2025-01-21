@@ -1,0 +1,30 @@
+.headline-gradient-clip {
+  background: linear-gradient(
+    110deg,
+    #021b8b,
+    #1e84d9 33%,
+    #bd83a2 66%,
+    #ef6f33
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: InterFont, sans-serif;
+  font-weight: 520;
+}
+.gradient-code-button {
+  background: linear-gradient(
+    110deg,
+    #021b8b,
+    #1e84d9 33%,
+    #bd83a2 66%,
+    #ef6f33
+  );
+}
+.bg-blue-radial-color {
+  background: #0057d2;
+  background: radial-gradient(at center bottom, #0057d2, #ffffff);
+}
+.DialogOverlay {
+  background: white;
+}

@@ -14,8 +14,6 @@ import { Navbar } from "@/components/navbar";
 import { Screenshot } from "@/components/screenshot";
 import { Testimonials } from "@/components/testimonials";
 import { Heading, Subheading } from "@/components/text";
-import PreviousSearchesComponent from "@/components/url-components/PreviousSearchesComponent";
-import SearchComponent from "@/components/url-components/SearchComponent";
 import { ChevronRightIcon } from "@heroicons/react/16/solid";
 import type { Metadata } from "next";
 
@@ -53,18 +51,6 @@ function Hero() {
             <Button variant="secondary" href="/pricing">
               See pricing
             </Button>
-          </div>
-          <h1 className="headline-gradient-clip text-center font-display text-3xl font-semibold tracking-tight [text-wrap:balance] sm:text-7xl">
-            Social Media Share Previewer
-          </h1>
-          <p className="mb-10 mt-6 text-center text-xl text-neutral-600">
-            Experience the power of previewing your social media posts across
-            platforms. This tool delivers quality assurance, efficiency, and
-            captivating features, enhancing your content creation journey.
-          </p>
-          <div className="flex w-full flex-col justify-center align-middle">
-            <SearchComponent urlLink={"false"} isPending={false} />
-            <PreviousSearchesComponent />
           </div>
         </div>
       </Container>
