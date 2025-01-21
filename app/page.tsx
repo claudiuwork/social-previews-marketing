@@ -1,26 +1,28 @@
-import { BentoCard } from '@/components/bento-card'
-import { Button } from '@/components/button'
-import { Container } from '@/components/container'
-import { Footer } from '@/components/footer'
-import { Gradient } from '@/components/gradient'
-import { Keyboard } from '@/components/keyboard'
-import { Link } from '@/components/link'
-import { LinkedAvatars } from '@/components/linked-avatars'
-import { LogoCloud } from '@/components/logo-cloud'
-import { LogoCluster } from '@/components/logo-cluster'
-import { LogoTimeline } from '@/components/logo-timeline'
-import { Map } from '@/components/map'
-import { Navbar } from '@/components/navbar'
-import { Screenshot } from '@/components/screenshot'
-import { Testimonials } from '@/components/testimonials'
-import { Heading, Subheading } from '@/components/text'
-import { ChevronRightIcon } from '@heroicons/react/16/solid'
-import type { Metadata } from 'next'
+import { BentoCard } from "@/components/bento-card";
+import { Button } from "@/components/button";
+import { Container } from "@/components/container";
+import { Footer } from "@/components/footer";
+import { Gradient } from "@/components/gradient";
+import { Keyboard } from "@/components/keyboard";
+import { Link } from "@/components/link";
+import { LinkedAvatars } from "@/components/linked-avatars";
+import { LogoCloud } from "@/components/logo-cloud";
+import { LogoCluster } from "@/components/logo-cluster";
+import { LogoTimeline } from "@/components/logo-timeline";
+import { Map } from "@/components/map";
+import { Navbar } from "@/components/navbar";
+import { Screenshot } from "@/components/screenshot";
+import { Testimonials } from "@/components/testimonials";
+import { Heading, Subheading } from "@/components/text";
+import PreviousSearchesComponent from "@/components/url-components/PreviousSearchesComponent";
+import SearchComponent from "@/components/url-components/SearchComponent";
+import { ChevronRightIcon } from "@heroicons/react/16/solid";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   description:
-    'Radiant helps you sell more by revealing sensitive information about your customers.',
-}
+    "Radiant helps you sell more by revealing sensitive information about your customers.",
+};
 
 function Hero() {
   return (
@@ -52,10 +54,22 @@ function Hero() {
               See pricing
             </Button>
           </div>
+          <h1 className="headline-gradient-clip text-center font-display text-3xl font-semibold tracking-tight [text-wrap:balance] sm:text-7xl">
+            Social Media Share Previewer
+          </h1>
+          <p className="mb-10 mt-6 text-center text-xl text-neutral-600">
+            Experience the power of previewing your social media posts across
+            platforms. This tool delivers quality assurance, efficiency, and
+            captivating features, enhancing your content creation journey.
+          </p>
+          <div className="flex w-full flex-col justify-center align-middle">
+            <SearchComponent urlLink={"false"} isPending={false} />
+            <PreviousSearchesComponent />
+          </div>
         </div>
       </Container>
     </div>
-  )
+  );
 }
 
 function FeatureSection() {
@@ -73,7 +87,7 @@ function FeatureSection() {
         />
       </Container>
     </div>
-  )
+  );
 }
 
 function BentoSection() {
@@ -92,7 +106,7 @@ function BentoSection() {
           graphic={
             <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
           }
-          fade={['bottom']}
+          fade={["bottom"]}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
         />
         <BentoCard
@@ -102,7 +116,7 @@ function BentoSection() {
           graphic={
             <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
           }
-          fade={['bottom']}
+          fade={["bottom"]}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
@@ -111,7 +125,7 @@ function BentoSection() {
           description="It’s never been faster to cold email your entire contact list using our streamlined keyboard shortcuts."
           graphic={
             <div className="flex size-full pl-10 pt-10">
-              <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
+              <Keyboard highlighted={["LeftCommand", "LeftShift", "D"]} />
             </div>
           }
           className="lg:col-span-2 lg:rounded-bl-4xl"
@@ -132,7 +146,7 @@ function BentoSection() {
         />
       </div>
     </Container>
-  )
+  );
 }
 
 function DarkBentoSection() {
@@ -153,7 +167,7 @@ function DarkBentoSection() {
             graphic={
               <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
-            fade={['top']}
+            fade={["top"]}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
           />
           <BentoCard
@@ -181,13 +195,13 @@ function DarkBentoSection() {
             graphic={
               <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
-            fade={['top']}
+            fade={["top"]}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
           />
         </div>
       </Container>
     </div>
-  )
+  );
 }
 
 export default function Home() {
@@ -207,5 +221,5 @@ export default function Home() {
       <Testimonials />
       <Footer />
     </div>
-  )
+  );
 }
