@@ -1,7 +1,12 @@
 import ResultComponent from "@/components/url-components/ResultComponent";
+import { Suspense } from "react";
 
 const ResultPage = () => {
-  return <ResultComponent />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ResultComponent />
+    </Suspense>
+  );
 };
 
 export default ResultPage;
